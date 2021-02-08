@@ -128,7 +128,7 @@ class ActivityTracker {
       activitiesTableBody.insertAdjacentHTML("beforeEnd",`
         <tr class="activity" data-id="${activity.id}">
           <td class="description">${activity.description}</td>
-          <td class="calories">${Math.round(activity.calories)}</td>
+          <td class="calories">${Math.round(activity.calories())}</td>
           <td class="time">${activity.formattedTime()}</td>
           <td class="date">${activity.formattedDate()}</td>
           <td class="close"><i class="las la-times"></i></i></td>
